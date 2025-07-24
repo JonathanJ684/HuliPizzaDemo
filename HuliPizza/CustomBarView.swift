@@ -17,7 +17,7 @@ struct CustomBarView: View {
         } label:{
             Image(systemName: "chevron.backward")
         }
-        .appButtonStyleModifier(backgroundColor: .sky)
+        .appButtonStyleModifier(backgroundColor: Color("sky"))
     }
     @ViewBuilder var  homeButton: some View{
         Button{
@@ -25,7 +25,7 @@ struct CustomBarView: View {
         } label:{
             Image(systemName: "house.fill")
         }
-        .appButtonStyleModifier(backgroundColor: .sky)
+        .appButtonStyleModifier(backgroundColor: Color("sky"))
     }
     
     @ViewBuilder var level: some View{

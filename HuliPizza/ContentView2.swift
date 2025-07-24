@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-let sky = Color.sky
-let surf = Color.surf
+let sky = Color("sky")
+let surf = Color("surf")
 
 struct ContentView: View {
     var menu:[MenuItem]
@@ -32,8 +32,8 @@ struct ContentView: View {
                 HStack{
                     Spacer()
                     Text("Huli Pizza Company")
-                        .foregroundStyle(.sky)
-                        .background(.surf)
+                        .foregroundStyle(Color(sky))
+                        .background(Color(surf))
                 }
             }
             StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
